@@ -15,28 +15,37 @@ struct ContentView: View {
             
             VStack {
                 
-                Text("This is the root view 😁")
+                Text("HOME PAGE")
+                    .font(.title)
+                    .fontWeight(.bold)
                 
-                NavigationLink(destination: SecondView()) {//destination shows what will be on the new view
-                    Text("Click me!")//label content shows to the user the link
+                NavigationLink(destination: Text("This is the About Page!")) {//destination shows what will be on the new view
+                    Text("About")//label content shows to the user the link
                 }//end of 1st navigation link
                 
-                NavigationLink(destination: Text("You've arrived at the Third View!")) {
-                    Text("Click to go to the third page!")
+                NavigationLink(destination: Text("This is the Contact Page!")) {
+                    Text("Contact")
                         .foregroundColor(Color.green)
                 }
                 
-            }
+                NavigationLink(destination: Text("This is the Help Page!")) {
+                    Text("Help")
+                        .foregroundColor(Color.red)
+                }
+                
+                
+            }//end of V stack
+            
             
             .navigationTitle("Home🏡")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
             
         }//end of the navigation stack
-        
-    }//end of V stack
+    }//end of body
+            
     }//end of struct
-
-#Preview {
-    ContentView()
-}
+    
+    #Preview {
+        ContentView()
+    }
