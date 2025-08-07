@@ -20,16 +20,16 @@ struct ContentView: View {
                     .fontWeight(.bold)
                 
                 NavigationLink(destination: Text("This is the About Page!")) {//destination shows what will be on the new view
-                    Text("About")//label content shows to the user the link
+                    Text("About 😁")//label content shows to the user the link
                 }//end of 1st navigation link
                 
                 NavigationLink(destination: Text("This is the Contact Page!")) {
-                    Text("Contact")
+                    Text("Contact 📞")
                         .foregroundColor(Color.green)
                 }
                 
                 NavigationLink(destination: Text("This is the Help Page!")) {
-                    Text("Help")
+                    Text("Help 🫡")
                         .foregroundColor(Color.red)
                 }
                 
